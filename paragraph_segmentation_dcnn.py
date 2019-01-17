@@ -82,7 +82,7 @@ def augment_transform(data, label):
     
     return transform(data*255., label)
 
-def make_cnn(ctx=mx.gpu()):
+def make_cnn(ctx=mx.gpu(0)):
     p_dropout = 0.5
     pretrained = resnet34_v1(pretrained=True, ctx=ctx)
     pretrained_2 = resnet34_v1(pretrained=True, ctx=mx.cpu(0))
