@@ -20,9 +20,9 @@ from mxboard import SummaryWriter
 
 mx.random.seed(1)
 
-from HandwrittenTextRecognition_MXNet.utils.iam_dataset import IAMDataset, resize_image
-from HandwrittenTextRecognition_MXNet.utils.iou_loss import IOU_loss
-from HandwrittenTextRecognition_MXNet.utils.draw_box_on_image import draw_box_on_image
+from content.HandwrittenTextRecognition_MXNet.utils.iam_dataset import IAMDataset, resize_image
+from content.HandwrittenTextRecognition_MXNet.utils.iou_loss import IOU_loss
+from content.HandwrittenTextRecognition_MXNet.utils.draw_box_on_image import draw_box_on_image
 
 print_every_n = 20
 send_image_every_n = 20
