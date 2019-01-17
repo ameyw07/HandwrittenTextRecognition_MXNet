@@ -17,7 +17,7 @@ import logging
 from mxnet.gluon.data import dataset
 from mxnet import nd
 
-from HandwrittenTextRecognition_MXNet.utils.expand_bounding_box import expand_bounding_box
+from utils.expand_bounding_box import expand_bounding_box
 
 def crop_image(image, bb):
     ''' Helper function to crop the image by the bounding box (in percentages)
