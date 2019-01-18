@@ -24,9 +24,9 @@ from utils.iam_dataset import IAMDataset, resize_image
 from utils.iou_loss import IOU_loss
 from utils.draw_box_on_image import draw_box_on_image
 
-print_every_n = 20
+print_every_n = 2
 send_image_every_n = 20
-save_every_n = 100
+save_every_n = 1
 
 # pre-training: python paragraph_segmentation_dcnn.py -r 0.001 -e 181 -n cnn_mse.params -y 0.15
 # fine-tuning: python paragraph_segmentation_dcnn.py -r 0.0001 -l iou -e 150 -n cnn_iou.params -f cnn_mse.params -x 0 -y 0
